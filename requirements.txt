@@ -1,0 +1,2 @@
+pybuilder==0.12.10
+twine==3.4.1
