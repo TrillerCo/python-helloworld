@@ -6,7 +6,7 @@ use_plugin("python.unittest")
 use_plugin("python.distutils")
 name = "hello"
 default_task = "publish"
-version = datetime.datetime.now().strftime('%Y%M%d%H%M')
+version = "latest"
 @init
 def set_properties(project):
     project.set_property("publish_command", f"rm -rf target/dist/cicd; cp -r target/dist/cicd-{version} target/dist/cicd;")
